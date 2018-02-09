@@ -51,3 +51,4 @@ def solution(A):
 array = [-1, -1, 1, -1, 1, 0, 1, -1, -1]
 print(solution(array))
 
+#SCORE 63%; 100% Correctness, 27% Performance; Correct functionality, problems with scalability
