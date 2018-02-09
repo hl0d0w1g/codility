@@ -42,8 +42,7 @@ def solution(N):
 
 print(solution(1041))
 
-
-#SCORE 100%
+# SCORE 100%
 
 
 
