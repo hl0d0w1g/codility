@@ -1,5 +1,6 @@
 """
-A non-empty zero-indexed array A consisting of N integers is given. The array contains an odd number of elements, and each element of the array can be paired with another element that has the same value, except for one element that is left unpaired.
+A non-empty zero-indexed array A consisting of N integers is given. The array contains an odd number of elements, and each element of the array can be paired with another element 
+that has the same value, except for one element that is left unpaired.
 
 For example, in array A such that:
   A[0] = 9  A[1] = 3  A[2] = 9
@@ -35,3 +36,17 @@ Complexity:
         expected worst-case time complexity is O(N);
         expected worst-case space complexity is O(1), beyond input storage (not counting the storage required for input arguments).
 """
+
+def solution(A):
+	N = len(A) - 1
+	while A.index(A[N]) != N:
+		print(N, A.index(A[N]), A.index(A[N]) != N, A)
+		if A[A.index(A[N])] != 0:
+			A[A.index(A[N])] = 0
+		N -= 1
+	return A[N]
+
+
+array = [9, 3, 9, 9, 7, 9, 7, 5, 4, 3, 4, 6, 5, 3, 6]
+print(solution(array))
+
