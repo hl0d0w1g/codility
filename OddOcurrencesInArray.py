@@ -50,3 +50,22 @@ def solution(A):
 array = [9, 3, 9, 9, 7, 9, 7, 5, 4, 3, 4, 6, 5, 3, 6]
 print(solution(array))
 
+#SCORE: 66%; 100% correctness, 25% performance
+#Detected time complexity: O(N**2)
+"""
+medium2
+medium random test n=100,003
+	TIMEOUT ERROR
+	running time: >6.00 sec., time limit: 0.48 sec.
+
+big1
+big random test n=999,999, multiple repetitions
+	TIMEOUT ERROR
+	running time: >9.00 sec., time limit: 3.58 sec.
+
+big2
+big random test n=999,999
+	TIMEOUT ERROR
+	running time: >9.00 sec., time limit: 3.82 sec.
+
+"""
