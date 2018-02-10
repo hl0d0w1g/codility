@@ -24,16 +24,25 @@ Complexity:
 def solution(N):
 	binary = ""
 	while N > 1:
-		binary += str(N % 2)    # convert the rest of the division by 2 to a string and add to the string
-		N = N // 2 				# make the exact division by 2
-	binary += str(N) 			# add the last 1 
-	binary = binary[::-1] 		# invert the order of the string
-	pgap = 0 					# principal gap, is the bigest gap founded
-	sgap = 0 					# second gap, is the current gap 
+		# convert the rest of the division by 2 to a string and add to the string
+		binary += str(N % 2)    
+		# make the exact division by 2
+		N = N // 2 	
+
+	# add the last 1 			
+	binary += str(N) 
+	# invert the order of the string			
+	binary = binary[::-1]
+	# principal gap, is the bigest gap found 		
+	pgap = 0 
+	# second gap, is the current gap 					
+	sgap = 0 					
 	for i in binary:
-		if i == "0":			
+		if i == "0":
+			# if the current caracter is a cero, increase the actual gap			
 			sgap += 1
-		if i == "1":			
+		if i == "1":
+			# if the current caracter is a one, check what is the biggest gap			
 			if sgap > pgap:
 				pgap = sgap
 			sgap = 0
@@ -42,7 +51,7 @@ def solution(N):
 
 print(solution(1041))
 
-# SCORE 100%
+# SCORE 100%; 100% correcteness, 100% performance
 
 
 
