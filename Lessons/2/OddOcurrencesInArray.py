@@ -38,34 +38,14 @@ Complexity:
 """
 
 def solution(A):
-	N = len(A) - 1
-	while A.index(A[N]) != N:
-		print(N, A.index(A[N]), A.index(A[N]) != N, A)
-		if A[A.index(A[N])] != 0:
-			A[A.index(A[N])] = 0
-		N -= 1
-	return A[N]
+    unmatched = set()
+    for item in A:
+        try:
+            unmatched.remove(item)
+        except KeyError:
+            unmatched.add(item)
+    return unmatched.pop()
 
 
-array = [9, 3, 9, 9, 7, 9, 7, 5, 4, 3, 4, 6, 5, 3, 6]
-print(solution(array))
-
-#SCORE: 66%; 100% correctness, 25% performance
-#Detected time complexity: O(N**2)
-"""
-medium2
-medium random test n=100,003
-	TIMEOUT ERROR
-	running time: >6.00 sec., time limit: 0.48 sec.
-
-big1
-big random test n=999,999, multiple repetitions
-	TIMEOUT ERROR
-	running time: >9.00 sec., time limit: 3.58 sec.
-
-big2
-big random test n=999,999
-	TIMEOUT ERROR
-	running time: >9.00 sec., time limit: 3.82 sec.
-
-"""
+#SCORE: 100%; 100% correctness, 100% performance
+#Detected time complexity: O(N) or O(N*log(N))

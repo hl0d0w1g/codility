@@ -49,8 +49,6 @@ def solution(N):
 
 	return pgap
 
-print(solution(1041))
-
 # SCORE 100%; 100% correcteness, 100% performance
 
 
