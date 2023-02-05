@@ -48,4 +48,4 @@ def solution(A, K):
             A = [A[-1]] + A[:-1]
         return A
 
-#SCORE: 100%; 100% correctness, not assessed performance
+# SCORE: 100%; 100% correctness, not assessed performance

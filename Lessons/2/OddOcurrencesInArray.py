@@ -47,5 +47,5 @@ def solution(A):
     return unmatched.pop()
 
 
-#SCORE: 100%; 100% correctness, 100% performance
-#Detected time complexity: O(N) or O(N*log(N))
+# SCORE: 100%; 100% correctness, 100% performance
+# Detected time complexity: O(N) or O(N*log(N))

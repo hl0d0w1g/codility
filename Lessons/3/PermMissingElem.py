@@ -26,5 +26,5 @@ Write an efficient algorithm for the following assumptions:
 def solution(A):
     return sum(list(range(1, len(A) + 2))) - sum(A)
 
-#SCORE: 100%; 100% correctness, 100% performance
-#Detected time complexity: O(N) or O(N*log(N))
+# SCORE: 100%; 100% correctness, 100% performance
+# Detected time complexity: O(N) or O(N*log(N))

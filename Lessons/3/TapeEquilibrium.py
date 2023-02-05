@@ -52,5 +52,5 @@ def solution(A):
 
     return min_diff
 
-#SCORE: 100%; 100% correctness, 100% performance
-#Detected time complexity: O(N)
+# SCORE: 100%; 100% correctness, 100% performance
+# Detected time complexity: O(N)

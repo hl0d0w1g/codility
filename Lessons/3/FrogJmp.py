@@ -29,5 +29,5 @@ import math
 def solution(X, Y, D):
     return math.ceil((Y - X) / D)
 
-#SCORE: 100%; 100% correctness, 100% performance
-#Detected time complexity: O(1)
+# SCORE: 100%; 100% correctness, 100% performance
+# Detected time complexity: O(1)
